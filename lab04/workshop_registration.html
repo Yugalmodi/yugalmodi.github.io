@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang = 'en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content='width = device width, initial scale=1.0' />
+		<title>Workshop Registration</title>
+		<link href="form.css" type="text/css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<form  action="" method="" enctype="" novalidate autocomplete>
+			<div class ="form">
+				<div class ="top">
+					<a class="heading">Workshop Registration </a> 
+					<a class="more_action">More Actions <img class="triangle"/></a>
+				</div>
+				<div class ="center">
+					<p>Register now while seats are available!</p>
+					<div class="grid_layout">
+						<div class="grid_item">First Name<span id="mandatory">*</span></div>
+						<div class="grid_item"><input type="text" name="firstname" id="firstname"/></div>
+						<div class="grid_item"><p>Lunch</p></div>
+						<div class="grid_item"></div>
+						
+						
+						<div class="grid_item">Last Name<span id="mandatory">*</span></div>
+						<div class="grid_item"><input type="text" name="lastname" id="lastname"/></div>
+						<div class="grid_item">Meal Preference</div>
+						<div class="grid_item">
+							<select>
+								<option>Vegan</option>
+								<option>Vegeterian</option>
+								<option>Eggeterian</option>
+								<option>Non-Vegeterian</option>
+							</select>
+						</div>
+						
+						
+						<div class="grid_item">Company/Institute Name<span id="mandatory">*</span></div>
+						<div class="grid_item"><input type="text" name="company" id="company"/></div>
+						<div class="grid_item"><p>Payment Details</p></div>
+						<div class="grid_item"></div>
+						
+						
+						<div class="grid_item">Address<span id="mandatory">*</span></div>
+						<div class="grid_item"><textarea rows="6" name="address" id="address"></textarea></div>
+						<div class="grid_item">Payment Mode</div>
+						<div class="grid_item">
+							<label><input class="radio" type="radio" name="radio_payment" id="cb_cash" ></input>Cash</label><br>
+							<label><input class="radio" type="radio" name="radio_payment" id="cb_check"></input>Check</label><br>
+							<label><input class="radio" type="radio" name="radio_payment" id="cb_draft"></input>Demand Draft</label>
+						</div>
+						
+						
+						<div class="grid_item">City</div>
+						<div class="grid_item"><input type="text" name="city" id="city"/></div>
+						<div class="grid_item">DD/Cheque No.</div>
+						<div class="grid_item"><input type="text" name="dd" id="dd"/></div>
+						
+						
+						<div class="grid_item">State/Provigin/Region</div>
+						<div class="grid_item">
+							<select>
+								<option>Select</option>
+								<option>Iowa</option>
+								<option>Texas</option>
+								<option>Karnataka</option>
+								<option>Madhya Pradesh</option>
+							</select>
+						</div>
+						<div class="grid_item">Drawn On(bank Name)</div>
+						<div class="grid_item"><input type="text" name="bankName" id="bankName"/></div>
+						
+						
+						<div class="grid_item">Country</div>
+						<div class="grid_item">
+							<select>
+								<option>Select</option>
+								<option>United Stated Of America (USA)</option>
+								<option>India</option>
+								<option>Nepal</option>
+								<option>Pakistan</option>
+							</select>
+						</div>
+						<div class="grid_item">Payable at</div>
+						<div class="grid_item"><input type="text" name="payable" id="payable"/></div>
+						
+						
+						<div class="grid_item">Email<span id="mandatory">*</span></div>
+						<div class="grid_item"><input type="text" name="email" id="email"/></div>
+						<div class="grid_item"></div>
+						<div class="grid_item"></div>
+						
+						
+						<div class="grid_item">Phone Number<span id="mandatory">*</span></div>
+						<div class="grid_item"><input type="text" name="phoneNum" id="phoneNum"/></div>
+						<div class="grid_item"></div>
+						<div class="grid_item"></div>
+						
+					</div>
+				</div>
+				<div class ="bottom">
+					<input type="submit" value="Submit" id="btnSubmit"/>
+					<input type="reset" value="Reset" id="btnReset"/>
+				</div>
+				<div class="white_space" style="height:px; width:100%; clear:both;"></div>
+			</div>
+		</form>
+	</body>
+</html>

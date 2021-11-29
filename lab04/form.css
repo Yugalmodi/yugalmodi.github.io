@@ -1,0 +1,76 @@
+.form{
+	background-color:#a2cbbb;
+}
+.top{
+	padding: 5px;
+}
+.heading{
+	font-weight: bold;
+}
+.more_action{
+	padding-left:20px;
+	font-size: 80%;
+}
+.triangle{
+	width:0;
+	height:0;
+	border-top:7px solid #000000;
+	border-bottom:0px solid transparent;
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	
+}
+.white_space{
+	height:1px;
+}
+
+.bottom{
+	margin-left:1px;
+	margin-right:1px;
+	padding:3px;
+	text-align: center;
+	background-color: #e3e3e3;
+}
+.center{
+	margin-left:1px;
+	margin-right:1px;
+	padding-top:1px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color: #FFFFFF;
+}
+.grid_layout{
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    grid-template-rows: auto;
+}
+.grid_item {
+    padding: 5px;
+    font-size: 15px;
+    text-align: left;
+	font-weight: bold;
+}
+#btnSubmit, #btnReset{
+	margin: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color:#79a896;
+	color: #FFFFFF;
+	border: none;
+}
+
+p{
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+input[type="radio"]:checked + span
+{
+    font-weight: normal;
+}
+span{
+	color:red;
+}
