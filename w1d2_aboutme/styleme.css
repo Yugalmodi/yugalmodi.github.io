@@ -1,0 +1,39 @@
+body{
+	background-color: #404040;
+}
+h1, h3{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #A0C2F6;
+}
+h1 {
+	font-size: 300%;
+}
+h3{
+	font-size: 120%;
+}
+strong, .more{
+	color: #F1EE74;
+	font-weight: bold;
+}
+.more_list, .more{
+	list-style-type: none;
+}
+p, li, span{
+	color: #FFFFFF;
+	font-weight: normal;
+}
+a{
+	color: #E60000;
+	text-decoration: none;
+}
+p:first-letter {
+    font-size: 1.5em;
+}
+
+ol { 
+    display: flex;
+    flex-direction: column-reverse;
+}
+li {
+    flex: 0 0 auto;
+}
