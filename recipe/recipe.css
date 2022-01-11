@@ -1,0 +1,64 @@
+body{
+    margin-left: 30px;
+    margin-right: 20px;
+    background-image: url("images/silverware.jpg");
+}
+.title{
+    color: #A4A400;
+    letter-spacing: 5px;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans Unicode, Helvetica, Arial sans-serif;   
+    font-weight: bolder;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+#page-title{
+    text-align: center;
+    font-size: 22pt;
+}
+.item{
+    height: 50px;
+    width: 35px;
+    text-align: left;
+}
+abbr{
+    text-decoration: underline;
+}
+.comments{
+    font-size: 18px;
+    font-style: italic;
+    background-color: #f8f3a6;
+    line-height: 18px;
+}
+#links{
+	list-style-type:none; margin-left: -40px;
+}
+p, li{
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+span{
+    text-decoration: line-through;
+}
+#recipe-image{
+    padding-top: 200px;
+}
+#custom-ul{
+    list-style-image: url('images/pie_icon.gif');
+}
+#recipe-desc-ul{
+	list-style-type:none; 
+	margin-left: -40px;
+}
+a{
+    color:  #A4A400;
+    text-decoration: underline;
+}
+#verifier{
+    text-align: right;
+}
+
+#copyright{
+    text-align: right;
+}
