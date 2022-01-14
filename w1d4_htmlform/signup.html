@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<div id="main-content">
+			<form action="http://mumstudents.org/params.php" method="post">
+				<div id="form-div">
+					<fieldset>
+						<legend>New User SignUp: </legend>
+						<div id="form-details">
+							<div id="titles">
+								<label> Name: </label> <br><br>
+								<label> Gender: </label> <br><br>
+								<label> Age: </label> <br><br>
+								<label> Personality type: </label> <br><br>
+								<label> Favorite OS: </label> <br><br>
+								<label> Seeking age: </label><br><br>
+								<input type="submit" value="Sign Up">
+							</div>
+							<div id="contents">
+								<input type="text" name="name" maxlength="16"> <br><br>
+								<input type="radio" name="male">Male
+								<input type="radio" name="male" checked>Female <br><br>
+								<input type="text" name="age" maxlength="2" size="6"><br><br>
+								<input type="text" name="personality" size="6" maxlength="4">  (<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type?</a>)<br><br>
+								<select name="favOs">
+									<option value="windows">Windows</option>
+									<option value="linux">Mac OS X</option>
+									<option value="linux">Linux</option>
+								</select><br><br>
+								<input type="text" name="min" placeholder="min" size="6" maxlength="2">
+								to 
+								<input type="text" name="max" placeholder="max" size="6" maxlength="2">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</form>
+		</div>
+		<div id="verifier">
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fyugalmodi.github.io%2Fw1d4_htmlform%2Fsignup.html" target="_blank" rel="noopener noreferrer"> 
+				<img src="../resources/html_checker.png" alt="html validator"  width="200" height="100" />
+			</a>
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyugalmodi.github.io%2Fw1d4_htmlform%2Fmystyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank" rel="noopener noreferrer">
+			<img src="../resources/css_checker.png" width="200" height="90" alt="css validator"/>
+			</a>
+		</div>
+	</body>
+</html>
