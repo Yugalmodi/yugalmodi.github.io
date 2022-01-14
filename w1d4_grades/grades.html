@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="gradeStyle.css">
+		<title>Retrieve Grade</title>
+	</head>
+	<body>
+		<div id="main-content">
+			<h1>Retrieve your grade</h1>
+			<form action="http://mumstudents.org/params.php" method="post">
+				<div id="form-div">
+					Student Name:<input type="text" name="sname"/></br></br>
+					Student ID:<input type="text" name="sid"/></br></br>
+					Assignment:
+					<select name="assignment">
+						<optgroup label="HomeWork">
+							<option>HomeWork 1</option>
+							<option>HomeWork 2</option>
+							<option>HomeWork 3</option>
+						</optgroup>
+						<optgroup label="Assignments">
+							<option>Assignment 1</option>
+							<option selected>Assignment 2</option>
+							<option>Assignment 3</option>
+						</optgroup>
+						<optgroup label="Labs">
+							<option>Lab 1</option>
+							<option>Lab 2</option>
+							<option>Lab 3</option>
+						</optgroup>
+					</select></br></br>
+					<fieldset>
+						<legend>Student Entry:</legend>
+						<input type="radio" name="sEntry" value="feb"/>February
+						<input type="radio" name="sEntry" value="may"/>May
+						<input type="radio" name="sEntry" value="aug" checked/>August
+						<input type="radio" name="sEntry" value="nov"/>November
+					</fieldset></br>
+					<input type="checkbox" name="confirmation" />I confirmed, All the enterd details are correct and verified by me.</br></br>
+					<input type="submit" value="Get Grade!"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
