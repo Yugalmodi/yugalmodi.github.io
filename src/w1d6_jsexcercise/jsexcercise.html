@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<title>JavaScript Excercise</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="logic.js"></script>
+	</head>
+	<body>
+		<div id="main-content">
+			<h1>JavaScript Excercise</h1>
+			<hr>
+			<div id="questions">
+				<div id="q1">
+					<h4>1. What is the difference between the following 2 statements?
+					<i>
+						setTimeout(booyah, 2000);
+					</i></h4>
+					<p><b><u>Solution</u>:-</b> It will call the "booyah" function after 2 seconds. As, we are passing function name only.</p>
+					
+					<h4><i>setTimeout(booyah(), 2000);</i></h4>
+					<p><b><u>Solution</u>:-</b> It will call the "booyah" function immediately, rather than waiting 2 seconds. As, we are calling the function using '()'.</p>
+				</div>
+				<hr>
+				<div id="q2">
+					<h4>2. What do the following 2 alerts display (Solutionwer without running the code)?
+					<i>
+						var myfunc = function(a, x) {
+							return a * x;
+						};
+						var x = myfunc(2, 3);
+						var y = myfunc;
+						
+						alert(x); <input type="submit" value="verify" id="q2_1">
+						
+						alert(y(2,3); <input type="submit" value="verify" id="q2_2">
+					</i></h4>
+					<p><b><u>Solution</u>:-</b> Both alert functions will display "6". 
+					First alert, we are passing the x var refrence and x is calling a function.
+					Second alert, we are calling y var and y is refrence of a function or in other words y is a function. </p>
+				</div>
+				<hr>
+				<div id="q3">
+					<h4>3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”
+					<i>
+						setTimeout(booyah1, 2000); <input type="submit" value="verify" id="q3_1">
+					
+						setTimeout(booyah2(), 2000); <input type="submit" value="verify" id="q3_2">
+					</i></h4>
+					<p><b><u>Solution</u>:-</b>
+						function booyah1(){
+							alert("BOOYAH!");
+						}
+						function booyah2(){
+							return ()=>alert("BOOYAH!");
+						}
+					</i></p>
+				</div>
+				<hr>
+				<div id="q4">
+					<h4>4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</h4>
+					<p><b><u>Solution</u>:-</b>Unobtrusive Javascript is a way to write the javascript code. According to the principles of unobtrusive javascript, JavaScript code should be seperate from HTML. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
