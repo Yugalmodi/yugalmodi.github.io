@@ -1,12 +1,12 @@
 body{
 	background-color:#CCCCFF;
 	font-size:14pt;
-	font-style:bold;
+	font-weight:bold;
 	font-family:sans-serif;
 }
 h1{
 	font-size:32pt;
-	font-style:bold;
+	font-weight:bold;
 	text-align:center
 }
 textarea{
@@ -16,7 +16,7 @@ textarea{
 	height:400px;
 	display:block;
 	font-size:12pt;
-	font-style:bold;
+	font-weight:bold;
 	font-family:monospace;
 }
 #controllers{
