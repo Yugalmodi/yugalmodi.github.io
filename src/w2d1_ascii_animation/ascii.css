@@ -1,0 +1,43 @@
+body{
+	background-color:#CCCCFF;
+	font-size:14pt;
+	font-style:bold;
+	font-family:sans-serif;
+}
+h1{
+	font-size:32pt;
+	font-style:bold;
+	text-align:center
+}
+textarea{
+	margin:auto;
+	padding:10px;
+	width:90%;
+	height:400px;
+	display:block;
+	font-size:12pt;
+	font-style:bold;
+	font-family:monospace;
+}
+#controllers{
+	width: 50%;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;  
+}
+fieldset{
+    align-items: center;
+    display: inline;
+    border: 5px solid black;
+}
+input, select, label{
+    font-size: 18px;
+    font-weight: bold;
+	padding-right:5px;
+	padding-left:5px;
+}
+#verifier{
+	opacity:50%;
+	margin-top: 20px;
+	float:right;
+}
