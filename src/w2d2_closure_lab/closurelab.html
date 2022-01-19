@@ -18,7 +18,17 @@
 					</h4>
 					<button id='btn-clickme'>Click me!</button>
 					<p id='output'></p>
-					
+					<p><b><u>Solution</u>:-</b><i>
+					let rudyTimer = null;
+					function delayMsg2(){
+						let output = document.getElementById('output');
+						if(rudyTimer==null)rudyTimer = setInterval(()=> output.innerHTML  = output.textContent+" Rudy!", 1000);
+						else{
+							clearInterval(rudyTimer);
+							rudyTimer = null;
+						}
+					}
+					<i></p>
 				</div>
 				<hr>
 				<div id="q2">
@@ -27,6 +37,26 @@
 					<label>Deposit: </label><input type="text" id="amount"/><br>
 					<button onclick="createAccount.newAccount()">Create New Account</button><br>
 					<textarea rows=10 cols=80 id="textBox"></textarea>
+					<p><b><u>Solution</u>:-</b><i>
+					let createAccount = (function () {
+						let accList = [];
+						class Account {
+						  constructor(accName, deposit) {
+							this.accName = accName;
+							this.deposit = deposit;
+						  }
+						}
+						function display() {
+							document.getElementById("textBox").value += "Account Name: "+accList.at(-1).accName+", Deposit: "+accList.at(-1).deposit+"\n";
+						}
+						return {
+							newAccount: function () {
+								accList.push(new Account(document.getElementById('name').value, document.getElementById('amount').value));
+								display();
+							}
+						};
+					})();
+					<i></p>
 				</div>
 			</div>
 		</div>
