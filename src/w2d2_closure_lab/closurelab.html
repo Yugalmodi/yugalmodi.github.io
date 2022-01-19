@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<title>Closure Lab</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="timermodule.js"></script>
+		<script src="bankmodule.js"></script>
+	</head>
+	<body>
+		<div id="main-content">
+			<h1>Module and Closure Lab</h1>
+			<hr>
+			<div id="questions">
+				<div id="q1">
+					<h4>1. Rewrite the setInterval example (the one with function delayMsg2 that prints out ‘Rudy!’) to use the module pattern. Call the module ‘rudyTimer’. I.e., varrudyTimer’= (… )() and then use the module as the event handler on the button. I.e., 
+					</h4>
+					<button id='btn-clickme'>Click me!</button>
+					<p id='output'></p>
+					
+				</div>
+				<hr>
+				<div id="q2">
+					<h4>Bank Account</h4>
+					<label>Account Name: </label><input type="text" id="name"/><br>
+					<label>Deposit: </label><input type="text" id="amount"/><br>
+					<button onclick="createAccount.newAccount()">Create New Account</button><br>
+					<textarea rows=10 cols=80 id="textBox"></textarea>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

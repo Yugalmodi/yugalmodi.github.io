@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<title>JavaScript Scope Excercise</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="logic.js"></script>
+	</head>
+	<body>
+		<div id="main-content">
+			<h1>Javascript Scope Exercises</h1>
+			<hr>
+			<div id="questions">
+				<div id="q1">
+					<h4>1. Determine what this Javascript code will print out (without running it):
+						<i>
+							x = 1;
+							var a = 5;
+							var b = 10;
+							var c = function(a, b, c) {
+								var x = 10;
+								document.write(x);
+								document.write(a);
+								var f = function(a, b, c) {
+									b = a;
+									document.write(b);
+									b = c;
+									var x = 5;
+								}
+								f(a,b,c);
+								document.write(b);
+							}
+							c(8,9,10);
+							document.write(b);
+							document.write(x);
+							}
+						</i></h4>
+					<p><b><u>Solution</u>:-</b> 10, 8, 8, 9, 10, 1.</p>
+				</div>
+				<hr>
+				<div id="q2">
+					<h4>2. What is the difference between a method and function?</h4>
+					<p><b><u>Solution</u>:-</b>A function is block of code that perform certain task. while, Method is a property of an object that contains function definition.
+					Example:-<i>
+					function sum(a,b){
+						return a+b;
+					}
+
+					let console={
+						a:10,
+						b:20,
+						product:function(x,y){
+							return x*y;
+						}
+					}
+
+					sum(10,20)</i> <b>//This is way to call function</b>
+					<i>console.product(10,20)</i> <b>// This is way to call Method</b>
+					</p>
+				</div>
+				<hr>
+				<div id="q3">
+					<h4>3. What does 'this' refer to when used in a Java method?</h4>
+					<p><b><u>Solution</u>:-</b>'this' keyword in Java refers to the current object of the function. The value of 'this' always similar. Doesn't matter which function is calling it.
+					</p>
+				</div>
+				<hr>
+				<div id="q4">
+					<h4>4. What does 'this' refer to when used in a JavaScript method?</h4>
+					<p><b><u>Solution</u>:-</b>In JavaScript, All code live inside the object and all code run inside 'global' object. 'this' keyword in javascript refers to the object who called the function.
+					The value of 'this' ma be change as per respcet the caller function.
+					</p>
+				</div>
+				<hr>
+				<div id="q5">
+					<h4>5. What does 'this' refer to when used in a JavaScript constructor function?</h4>
+					<p><b><u>Solution</u>:-</b>In a constructor 'this' refers to a new object. when new ovject is created.
+					</p>
+				</div>
+				<hr>
+				<div id="q6">
+					<h4>6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'. When f is called by x.f( ), what does 'this' refer to?</h4>
+					<p><b><u>Solution</u>:-</b>'this' ref to 'x'.
+					</p>
+				</div>
+				<hr>
+				<div id="q7">
+					<h4>7. What is a free variable in JavaScript?</h4>
+					<p><b><u>Solution</u>:-</b>A free variable is the variable that used inside a function but not declared in that function.
+					Example:-<i>
+					let x = 10;
+					function sum(a,b){
+						return a+b+x;
+					}
+					sum(10,20);
+					</i>
+					'x' is the free variable in above example.
+					</p>
+				</div>
+				<hr>
+				<div id="q8">
+					<h4>8. Create an object that has properties with name = "fred" and major="music" and a property that is a function that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.</h4>
+					<p><b><u>Solution</u>:-</b><i>
+					let a = {
+						name : "fred",
+						major : "music",
+						smallestNum : function(a, b){
+							if (a==b) return Math.sqrt(a*b);
+							else if (a>b) return b;
+							else return a;
+						}
+					}</i></p>
+				</div>
+				<hr>
+				<div id="q9">
+					<h4>9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function. Employee objects have the following fields: name, salary, position.</h4>
+					<p><b><u>Solution</u>:-</b><i>
+					function Employee(name, salary, position){
+						this.name = name;
+						this.salary = salary;
+						this.position = position;
+					}
+					Employee e1 = new Employee("Suresh", "200K", "CTO");
+					Employee e2 = new Employee("Ramesh", "150K", "Product Manager");
+					Employee e3 = new Employee("Kamlesh", "100K", "Senior Engineer");
+					</i></p>
+				</div>
+				<hr>
+				<div id="q10">
+					<h4>10. Write a Javascript function that takes any number of input arguments and returns the product of the arguments.</h4>
+					<p><b><u>Solution</u>:-</b><i>
+					function product(){
+						let len = arguments.length;
+						if(len&lt;1)return 0;
+						let output = 1;
+						for(let i =0; i&lt;len; i++){
+							output*=arguments[i];
+						}
+						return output;
+					}
+					</i></p>
+				</div>
+				<hr>
+				<div id="q11">
+					<h4>11. Write an arrow function that returns the maximum of its three input arguments.</h4>
+					<p><b><u>Solution</u>:-</b><i>
+						let findMax = (a,b,c) => { 
+							if(a>b && a>c)  return a;
+							else if (b>a && b>c) return b;
+							else return c;
+						}
+					</i></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
