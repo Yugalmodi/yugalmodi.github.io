@@ -328,8 +328,9 @@
 				<div>
 					<h4>13. Write a few Javascript instructions to extend the Module of Question 10 to have a public address field and public methods setAddress(newAddress) and getAddress( ).</h4>
 					<p><b><u>Solution</u>:-</b><i>
+						employee.address="";
 						employee.setAddress = function(newAddress){
-							address = newAddress;
+							employee.address = newAddress;
 						};
 						employee.getAddress = function(){
 							return address;
