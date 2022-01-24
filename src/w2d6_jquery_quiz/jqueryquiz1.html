@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<title>JQuery Quiz I</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="main-content">
+			<h1>JQuery Quiz I</h1>
+			<hr>
+			<div id="questions">
+				<div>
+					<h4>1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? </h4>
+					<p><b><u>Solution</u>:-</b> When the jQuery function is invoked with a CSS selector, it will return a jQuery object wrapping any element(s) that match this selector. Jquery object doen't represnet the DOM object.</p>
+				</div>
+				<hr>
+				<div>
+					<h4>2. Write jQuery code to find all h1 elements that are children of a div element and make their background color red.
+					HTML CODE:<i>
+						&lt;body&gt;
+							&lt;h1&gt;abc&lt;/h1&gt;&lt;br&gt;
+							&lt;div&gt;
+								&lt;h1&gt;div-1&lt;/h1&gt;
+								&lt;h1&gt;div-2&lt;/h1&gt;
+							&lt;/div&gt;
+							&lt;h1&gt;xyz&lt;/h1&gt;
+						&lt;/body&gt;
+					</i></h4>
+					<p><b><u>Solution</u>:-</b>	$(document).ready(() => $("div h1").css("background-color", "red"));</p>
+				</div>
+				<hr>
+				<div>
+					<h4>3. Use a jQuery method to insert the text "YES!" at the end of the &lt;p&gt; element.<i>
+						&lt;!DOCTYPE html&gt;
+						&lt;html&gt;
+							&lt;head&gt;
+								&lt;script&gt;
+									&lt;!—INSERT YOUR JQUERY CODE HERE - - &gt;
+								&lt;/script&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+							&lt;	p&gt;Is jQuery FUN or what? &lt;/p&gt;
+							&lt;/body&gt;
+						&lt;/html&gt;
+					</i></h4>
+					<p><b><u>Solution</u>:-</b>	$(document).ready(() => $("p").append("&lt;p&gt; Yes!!&lt;/p&gt;"));</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
