@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content="width =device width, initial-scale=1.0"/>
+		<title>JQuery Quiz II</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="main-content">
+			<h1>JQuery Quiz II</h1>
+			<hr>
+			<div id="questions">
+				<div>
+					<h4>1. Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if they are. Explain why they can have different parameters and be equivalent, if they are equivalent. <i>
+					//code fragment 1
+					$("li").each(function(idx, e) {
+					 $(e).css(“color”, “yellow”); });
+					//code fragment 2
+					$("li").each(function() {
+					 $(this).css(“color”, “yellow”); });
+					//code fragment 3
+					$("li").each(function(idx) {
+					 $(this).css(“color”, “yellow”); });
+					</i></h4>
+					<p><b><u>Solution</u>:-</b> All the above 3 codes are equivalent and work the same. The only difference is arguments.
+					1st has 2 arguments 'e' is the element and 'idx' is the index of the element.
+					2nd have 0 arguments, and 'this' represents the current element.
+					3rd has 1 argument 'idx' is the index of the element and 'this' represents the current element. 
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h4>2. Write a jQuery expression to find all divs on a page that include an unordered list in them, and make their text color be blue.<i>
+						&lt;div&gt;no ul here &lt;/div&gt;
+						&lt;div&gt;
+							This does contain a ul.
+							&lt;ul&gt;
+								&lt;li&gt;the first item&lt;/li&gt;
+								&lt;li&gt;the second item&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+						&lt;script&gt;
+							&lt;!—INSERT YOUR JQUERY CODE HERE - - &gt;
+						&lt;/script&gt;
+						&lt;/body&gt;
+					</i></h4>
+					<p><b><u>Solution</u>:-</b>	$(document).ready(() =>	$("div ul").css('color','blue')); </p>
+				</div>
+				<hr>
+				<div>
+					<h4>3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body element.<i>
+					&lt;div&gt;&lt;h1&gt;JQuery Core&lt;/h1&gt;&lt;/div&gt;
+					</i>HTML: <i>
+						&lt;!DOCTYPE html&gt;
+						&lt;html&gt;
+							&lt;head&gt;
+								&lt;meta charset="utf-8"&gt;
+								&lt;title&gt;JS Bin&lt;/title&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+								
+							&lt;/body&gt;
+						&lt;/html&gt; 
+					</i></h4>
+					<p><b><u>Solution</u>:-</b> $(document).ready(() =&gt;	$("body").append("&lt;div&gt;&lt;h1&gt;JQuery Core&lt;/h1&gt;&lt;/div&gt;"));</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
