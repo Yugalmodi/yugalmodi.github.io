@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "w3d4_excercise/scripts/n1.js",
+  "scripts": {
+    "start": "set NODE_ENV=development && nodemon w3d4_excercise/scripts/AdderWebServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
