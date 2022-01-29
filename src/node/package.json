@@ -4,11 +4,12 @@
   "description": "",
   "main": "w3d4_excercise/scripts/n1.js",
   "scripts": {
-    "start": "set NODE_ENV=development && nodemon w3d4_excercise/scripts/AdderWebServer.js"
+    "start": "set NODE_ENV=development && nodemon w3d5_simplecalcultor/scripts/calculatorWebServer.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.2",
     "nodemon": "^2.0.15"
   }
 }
