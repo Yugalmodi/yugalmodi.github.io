@@ -4,7 +4,7 @@
   "description": "",
   "main": "w3d4_excercise/scripts/n1.js",
   "scripts": {
-    "start": "set NODE_ENV=development && nodemon w3d5_simplecalcultor/scripts/calculatorWebServer.js"
+    "start": "set NODE_ENV=development && nodemon w3d6_number_quiz/app.js"
   },
   "author": "",
   "license": "ISC",
