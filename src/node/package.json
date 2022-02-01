@@ -2,9 +2,9 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "w3d4_excercise/scripts/n1.js",
+  "main": "w3d5_simplecalcultor/scripts/calculatorWebServer.js",
   "scripts": {
-    "start": "set NODE_ENV=development && nodemon w3d4_excercise/scripts/AdderWebServer.js"
+    "start": "set NODE_ENV=development && nodemon w3d5_simplecalcultor/scripts/calculatorWebServer.js"
   },
   "author": "",
   "license": "ISC",

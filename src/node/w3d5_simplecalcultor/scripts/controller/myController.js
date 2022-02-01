@@ -1,29 +1,39 @@
 var myModel = require('../model/operations');
+var path = require('path');
+
+exports.home = (req, res, next)=>{
+    res.sendFile(path.join(__dirname, '../../', 'index.html'));
+}
 
 exports.perform = (req, res, next)=>{
-    var first = req.query.first;
-    var second = req.query.second;
-    var operation = req.query.operation;
+    var first = req.body.first;
+    var second = req.body.second;
+    var operation = req.body.operation;
     console.log("operation = "+operation);
     switch (operation){
         case 'Add': 
-            res.status(200).send(myModel.add(first, second));
+            req.app.locals.myData = myModel.add(first, second);
         break;
         case 'Subtract':
-            res.status(200).send(myModel.subtract(first, second));
+            req.app.locals.myData = myModel.subtract(first, second);
         break;
         case 'Multiply':
-            res.status(200).send(myModel.multiply(first, second));
+            req.app.locals.myData = myModel.multiply(first, second);
         break;
         case 'Divide':
-            res.status(200).send(myModel.divide(first, second));
+            req.app.locals.myData = myModel.divide(first, second);
         break;
         default:
             res.status(500).send('Something Wrong!');
     }
-} 
+    res.redirect('/solution');
+}
+
+exports.solution = (req, res, next) => {
+    res.send(req.app.locals.myData);
+}
 
 exports.back = (req, res, next) => {
     console.log('Going Back');
-    res.redirect('back');
+    res.redirect('/index.html');
 }
