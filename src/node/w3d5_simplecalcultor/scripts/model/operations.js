@@ -8,7 +8,7 @@ var myFrame = (function(){
     <body>
         <p>The Answer is: %s</p>
         <hr>
-        <p><a href="http://localhost:3000/back.js"> GO BACK</a></p>
+        <p><a href="/back.js"> GO BACK</a></p>
     </body>
     </html>
     `;

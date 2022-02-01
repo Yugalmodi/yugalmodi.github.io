@@ -1,6 +1,5 @@
 var myModel = require('../model/operations');
 var path = require('path');
-
 exports.home = (req, res, next)=>{
     res.sendFile(path.join(__dirname, '../../', 'index.html'));
 }

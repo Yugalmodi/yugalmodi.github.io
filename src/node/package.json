@@ -4,12 +4,13 @@
   "description": "",
   "main": "w3d5_simplecalcultor/scripts/calculatorWebServer.js",
   "scripts": {
-    "start": "set NODE_ENV=development && nodemon w3d5_simplecalcultor/scripts/calculatorWebServer.js"
+    "start": "set NODE_ENV=development && nodemon project_dictionary/Dictionary.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.15"
   }
 }
