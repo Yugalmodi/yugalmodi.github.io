@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+    head 
+        title Number Quiz 
+    body
+        h1 Number Quiz
+        p The Current Score is: #{score}
+        p Guess the number sequence is
+        p #{questions}
+        form(action="/", method='POST')
+            input(type="hidden", name="count", value=count)
+            input(type="hidden", name="score", value=score)
+            label your answer is &nbsp; &nbsp;
+            input(type="text", name="ansID", value="")
+            br
+            br
+            button Submit
